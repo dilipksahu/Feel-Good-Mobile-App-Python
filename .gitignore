@@ -8,7 +8,7 @@ logs
 # Ignore the build directory
 /dist
 /mobileappenv
-/.vs
+.vs
 
 # The file containing environment variables 
 .env
