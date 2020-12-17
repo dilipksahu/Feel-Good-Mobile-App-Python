@@ -8,14 +8,14 @@ always need some type of suggestions hence this app might show light in path.</s
 
 <h2>User Login Screenshot</h2>
 
-<img src='screenshots/user_login.png' />
+<img src='Screenshots/user_login.png' />
 
 
 <h2>Sign-Up Screenshot</h2>
 
-<img src='screenshots/sign_up.png' />
+<img src='Screenshots/sign_up.png' />
 
 
 <h2>Enlighten Me Screenshot</h2>
 
-<img src='screenshots/enlighten_me.png' />
+<img src='Screenshots/enlighten_me.png' />
