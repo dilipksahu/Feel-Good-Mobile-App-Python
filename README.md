@@ -13,7 +13,7 @@ always need some type of suggestions hence this app might show light in path.</s
 
 <h2>Sign-Up Screenshot</h2>
 
-<img src='Screenshots/sign_up.png' />
+<img src='Screenshots/sign-up.png' />
 
 
 <h2>Enlighten Me Screenshot</h2>
