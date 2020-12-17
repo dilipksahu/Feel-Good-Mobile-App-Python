@@ -54,30 +54,38 @@
         TextInput:
             id: password 
             hint_text: "Password"
-        Button:
-            text: "Submit"
-            on_press: root.add_user(root.ids.username.text,root.ids.password.text)
+        RelativeLayout:
+            Button:
+                text: "Submit"
+                on_press: root.add_user(root.ids.username.text,root.ids.password.text)
+                size_hint: 0.3, 0.5
+                pos_hint: {"center_x":0.5,"center_y":0.6}
 
 <SignUpScreenSuccess>:
     GridLayout:
         cols: 1
+        padding: 30, 30
+        spacing: 30, 30
         Label:
             text: "Sign up succesfull"
-        Button:
-            text: "Login Page"
-            on_press: root.go_to_login()
+        RelativeLayout:
+            Button:
+                text: "Login Page"
+                on_press: root.go_to_login()
+                size_hint: 0.3, 0.3
+                pos_hint: {"center_x":0.5,"center_y":0.6}
 
 <LoginScreenSuccess>:
     GridLayout:
         cols: 1
         padding: 30, 30
-        scaping: 30, 30
+        spacing: 30, 30
         RelativeLayout:
             ImageButton:
                 # text: "Logout"
                 on_press: root.log_out()
                 source: "logout_hover.png" if self.hovered else "logout_nothover.png"
-                size_hint: 0.35, 0.35
+                size_hint: 0.40, 0.35
                 pos_hint: {'center_x':0.93, 'center_y':0.8}
         Label:
             text: "How do you feel?"
@@ -87,9 +95,14 @@
         Button:
             text: "Enlighten me"
             on_press: root.get_quote(root.ids.feeling.text)
-        Label:
-            id: quote
-            text: ""
+        ScrollView:
+            Label:
+                id: quote
+                text: ""
+                text_size: self.width, None      # height - None
+                size_hint_y: None
+                height: self.texture_size[1]      # height of label, 1 is for height and 0 for width
+
 
 <RootWidget>:
     LoginScreen:
